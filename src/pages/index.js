@@ -37,13 +37,15 @@ const Home = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className=' h-screen w-full bg-[#00FF85] overflow-hidden  max-sm:scale-125 fixed'>
+      <div className=' h-screen w-full bg-[#00FF85]  max-sm:scale-125 fixed'>
         <Spline scene="https://prod.spline.design/zcSPwaiIs-kQzqrS/scene.splinecode" className=' scale-125  ' />
         <div className=' absolute w-full select-none text-center z-20 top-[35%] '> 
           <div className=' space-y-10'>
             <Glitch text={Welcome}/> 
+            <Link href={'/Introduction'}>
+              <CrazyButton/>            
+            </Link>
 
-            <CrazyButton/>
           </div> 
         </div>
       </div>
