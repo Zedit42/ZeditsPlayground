@@ -22,9 +22,9 @@ function App() {
   }, []);
 
   return (
-    <div className=" rounded-lg p-4 border-2 border-dashed max-w-[80%]">
-      <pre className=" mt-2 p-4" style={{ backgroundColor: "#0000 !important" }}>
-        <code className="language-jsx z-10">{codeString}</code>
+    <div className=" bg-white bg-opacity-5 border-t border-l backdrop-blur-2xl rounded-2xl bg-blend-multiply border-white/30 shadow-md p-4 border-2  min-w-[80%]">
+      <pre className=" mt-2 p-4 rounded-2xl " style={{ backgroundColor: "#ffff !important" }}>
+        <code  style={{ backgroundColor: "#0000 !important" }} className="language-jsx z-10" >{codeString}</code>
       </pre>
     </div>
   );

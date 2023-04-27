@@ -14,8 +14,10 @@ const Introduction = () => {
              <div className=' text-center pt-[3%] text-4xl font-thin select-none'>
               Here some tailwind basic animations
              </div>
-             <div className="container mx-auto">
-              <h1 className="text-center text-4xl font-bold mb-4">Kod Örneği</h1>
+             <div className=" flex justify-center  mt-[5%] ">
+              <CodeEx />
+            </div>
+            <div className=" flex justify-center  mt-[5%] ">
               <CodeEx />
             </div>
         </div>
