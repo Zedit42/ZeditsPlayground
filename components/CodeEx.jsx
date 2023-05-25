@@ -1,15 +1,18 @@
 import { useState } from 'react';
 import CopyToClipboard from 'react-copy-to-clipboard';
+import React from 'react';
 
-const Example = ({codeS, title}) => {
+
+
+const Example = ({codeS, title, iframe}) => {
   const [showCode, setShowCode] = useState(false);
   const [copied, setCopied] = useState(false);
   const handleCopy = () => {
     setCopied(true);
   };
   const exampleContent = (
-    <div className="flex flex-col items-center h-full justify-center inset-0">
-       <div dangerouslySetInnerHTML={{ __html: codeS }} />
+    <div className="flex flex-col items-center h-full justify-center ">
+       {React.createElement('div', { dangerouslySetInnerHTML: { __html: iframe || codeS } })}
     </div>
   );
 

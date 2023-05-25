@@ -21,7 +21,9 @@ export default function Home() {
       <div className='scroll-smooth
       snap-mandatory snap-y 
       h-[100vh] overflow-y-auto  '
-      >
+      >/
+      <iframe src="/test1" frameborder="0"></iframe>
+
         <Test1/>
         <Test2/>
         <Test3/>
