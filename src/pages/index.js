@@ -42,7 +42,7 @@ const Home = () => {
         <div className=' absolute w-full select-none text-center z-20 top-[35%] '> 
           <div className=' space-y-10'>
             <Glitch text={Welcome}/> 
-            <Link href={'/animations'}>
+            <Link href={'/buttons'}>
               <CrazyButton/>            
             </Link>
 
